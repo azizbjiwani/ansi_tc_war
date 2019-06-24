@@ -1,2 +1,5 @@
 [myservers]
 172.31.85.199
+
+[myservers:vars]
+ansible_password=vagrant
