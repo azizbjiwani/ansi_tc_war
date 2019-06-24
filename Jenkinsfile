@@ -9,7 +9,7 @@ pipeline {
                 //sh 'touch from-jenkins/test.txt'
 		    echo 'running palybook' 
                 sh '''
-                   ansible-playbook -i hosts tomcat.yml 
+                   ansible-playbook -i hosts tomcat.yml -c paramiko -u ubuntu
                 '''
                 }
         }
